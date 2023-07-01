@@ -16,9 +16,9 @@ router.get("/", async(req , res) => {
 
 router.post("/", async(req, res)=>{
     try {
-       const {name, description , author, price, available } = req.body;
+       const {name, description , author, price, available, image } = req.body;
         let Books = new Book({
-            name, description, author, price, available
+            name, description, author, price, available, image
         })
         await Books.save()
         if(!Books){
@@ -32,10 +32,10 @@ router.post("/", async(req, res)=>{
 
 router.put("/:id", async(req, res)=>{
     try {
-        const {name, description , author, price, available } = req.body;
+        const {name, description , author, price, available, image } = req.body;
     
         let book = await Book.findByIdAndUpdate(req.params.id, {
-            name, description, author, price, available
+            name, description, author, price, available, image
         })
         if(!book){
             return res.status(500).json({message: "Server error"})

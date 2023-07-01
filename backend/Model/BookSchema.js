@@ -22,6 +22,9 @@ const BookSchema = new Schema({
         type: Boolean,
         required : true
     },
+    image:{
+        type: String,
+    },
 })
 
 const Book = mongoose.model("Book", BookSchema)
