@@ -42,7 +42,7 @@ const Books = () => {
         <Button variant="primary" onClick={handleShow} >
           Add Books
         </Button>
-        <AddBook show={show} setShow={setShow}/>
+        <AddBook show={show} setShow={setShow} setBooks={setBooks}/>
       </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         {books &&
