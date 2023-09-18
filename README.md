@@ -45,41 +45,12 @@ Follow the instructions below to get the project up and running on your local ma
 - [MongoDB](https://www.mongodb.com/try/download/community) installed and running.
 - [Postman](https://www.postman.com/downloads/) or similar API testing tool.
 
-### Installation
-
-1. Clone this repository to your local machine using Git:
-
-   ```bash
-   git clone https://github.com/yourusername/book-store-backend.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd book-store-backend
-   ```
-
-3. Install the project dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Create a `.env` file in the project root directory and configure your environment variables (e.g., database connection, JWT secret, etc.). You can use the provided `.env.example` as a template.
-
-5. Start the server:
-
-   ```bash
-   npm start
-   ```
-
-The server should now be running at `http://localhost:3000` (or another port if configured).
 
 ## Usage
 
 ### API Endpoints
 
-The API provides the following endpoints for interacting with the book store data:
+The API provides the following endpoints for interacting with the bookstore data:
 
 - **GET /api/books**: Retrieve a list of all books.
 - **GET /api/books/:id**: Retrieve a specific book by its ID.
